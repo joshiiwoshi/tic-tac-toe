@@ -1,0 +1,223 @@
+#root {
+  height: 100%;
+  background-color: #000814;
+}
+
+#create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10em;
+  background-color: #000814;
+  color: #ffd60a;
+}
+#create h1 {
+  margin: 2px;
+}
+#create #avatar {
+  margin: 2em;
+  text-align: center;
+}
+#create #avatar h2 {
+  margin: 10px;
+}
+#create #avatar #image-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 30px;
+}
+#create #avatar #image-select i {
+  transition: all 0.2s ease-in-out;
+}
+#create #avatar #image-select i:hover {
+  transform: scale(1.08);
+}
+#create #avatar #image-select #avatar-image {
+  width: 300px;
+  height: 300px;
+}
+#create #avatar #image-select #avatar-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+#create #create-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#create #create-game p {
+  margin: 0;
+}
+#create #create-game input {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  padding: 10px;
+}
+#create #create-game input:focus {
+  outline: none;
+}
+#create #create-game button {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 50px;
+  gap: 10px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease-in-out;
+  border-radius: 15%;
+  background-color: #ffd60a;
+  color: #001d3d;
+}
+#create #create-game button:hover {
+  transform: scale(1.02);
+}
+
+#lobby {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffd60a;
+}
+#lobby ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  gap: 50px;
+}
+#lobby li {
+  list-style-type: none;
+}
+#lobby #team-select {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 10px;
+}
+#lobby #team-select #change-team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#lobby #team-select #change-team i {
+  transition: all 0.2s ease-in-out;
+}
+#lobby #team-select #change-team i:hover {
+  transform: scale(1.08);
+}
+#lobby #player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#lobby #player .img-container {
+  width: 300px;
+  height: 300px;
+}
+#lobby #player .img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+#lobby button {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 50px;
+  gap: 10px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease-in-out;
+  border-radius: 15%;
+  background-color: #ffd60a;
+  color: #001d3d;
+}
+#lobby button:hover {
+  transform: scale(1.02);
+}
+
+#game {
+  height: 100%;
+  text-align: center;
+}
+#game #grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 5vh;
+  margin: 0 25vw 0 25vw;
+  gap: 10px;
+  font-size: 75px;
+}
+#game #grid-container .cell {
+  color: #ffd60a;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ffd60a;
+}
+#game h1 {
+  color: #ffd60a;
+  margin: 20px;
+}
+#game #players {
+  margin-top: 2vh;
+  color: #ffd60a;
+}
+#game #players .img-container {
+  width: 200px;
+  height: 200px;
+}
+#game #players .img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+#game #players ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0 5vw 0 5vw;
+}
+#game #players li {
+  list-style-type: none;
+}
+#game h2 {
+  color: #ffd60a;
+  text-align: center;
+}
+#game button {
+  width: 150px;
+  height: 50px;
+  gap: 10px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease-in-out;
+  border-radius: 15%;
+  background-color: #ffd60a;
+  color: #001d3d;
+}
+#game button:hover {
+  transform: scale(1.02);
+}
+
+/*# sourceMappingURL=main.css.map */

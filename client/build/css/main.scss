@@ -1,0 +1,263 @@
+$main-black: #000814;
+$main-darkblue: #001d3d;
+$main-blue: #003566;
+$main-darkyellow: #ffc300;
+$main-yellow: #ffd60a;
+
+#root {
+    height: 100%;
+    background-color: $main-black;
+}
+
+#create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10em;
+    background-color: $main-black;
+    color: $main-yellow;
+
+    h1 {
+        margin: 2px;
+    }
+
+    #avatar {
+        margin: 2em;
+        text-align: center;
+        
+        h2 {
+            margin: 10px;
+        }
+
+        #image-select {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin: 30px;
+
+            i {
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.08);
+                }
+            }
+    
+            #avatar-image {
+                width: 300px;
+                height: 300px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    border: 2px solid black;
+                }
+            }
+        }
+    }
+
+    #create-game {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+        p {
+            margin: 0;
+        }
+        input {
+            width: 250px;
+            height: 50px;
+            font-size: 25px;
+            padding: 10px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            width: 150px;
+            height: 50px;
+            gap: 10px;
+            margin: 5px;
+            align-items: center;
+            justify-content: center;
+            transition: all .1s ease-in-out;
+            border-radius: 15%;
+            background-color: $main-yellow;
+            color: $main-darkblue;
+    
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+}
+
+
+#lobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $main-yellow;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        gap: 50px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    #team-select{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        gap: 10px;
+
+        #change-team {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            i {
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.08);
+                }
+            }
+        }
+    }
+
+    #player {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .img-container {
+            width: 300px;
+            height: 300px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                border: 2px solid black;
+            }
+        }
+    }
+
+    button {
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        height: 50px;
+        gap: 10px;
+        margin: 5px;
+        align-items: center;
+        justify-content: center;
+        transition: all .1s ease-in-out;
+        border-radius: 15%;
+        background-color: $main-yellow;
+        color: $main-darkblue;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+}
+
+#game {
+    height: 100%;
+    text-align: center;
+    
+    #grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 5vh;
+        margin: 0 25vw 0 25vw;
+        gap: 10px;
+        font-size: 75px;
+        
+        .cell {
+            color: $main-yellow;
+            border-width: 2px;
+            border-style: solid;
+            border-color: $main-yellow;
+        }
+    }
+
+    h1 {
+        color: $main-yellow;
+        margin: 20px;
+    }
+
+    #players {
+        margin-top: 2vh;
+        color: $main-yellow;
+        .img-container {
+            width: 200px;
+            height: 200px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                border: 2px solid black;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 0;
+            margin: 0 5vw 0 5vw;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    h2 {
+        color: $main-yellow;
+        text-align: center;
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        gap: 10px;
+        margin: 5px;
+        align-items: center;
+        justify-content: center;
+        transition: all .1s ease-in-out;
+        border-radius: 15%;
+        background-color: $main-yellow;
+        color: $main-darkblue;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
