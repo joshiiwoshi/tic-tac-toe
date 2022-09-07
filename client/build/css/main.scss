@@ -7,15 +7,24 @@ $main-yellow: #ffd60a;
 #root {
     height: 100%;
     background-color: $main-black;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: $main-black;
 }
 
 #create {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10em;
+    padding: 10vh 0 0 0;
     background-color: $main-black;
     color: $main-yellow;
+    overflow: auto;
 
     h1 {
         margin: 2px;
@@ -34,10 +43,12 @@ $main-yellow: #ffd60a;
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            text-align: center;
             gap: 15px;
             margin: 30px;
 
             i {
+                font-size: 7vmin;
                 transition: all .2s ease-in-out;
 
                 &:hover {
@@ -46,8 +57,8 @@ $main-yellow: #ffd60a;
             }
     
             #avatar-image {
-                width: 300px;
-                height: 300px;
+                width: 40vmin;
+                height: 40vmin;
                 img {
                     width: 100%;
                     height: 100%;
@@ -108,10 +119,37 @@ $main-yellow: #ffd60a;
     justify-content: center;
     align-items: center;
     color: $main-yellow;
+    padding: 10vmin;
+
+    h1 {
+        text-align: center;
+    }
+
+    #copy-invite {
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        height: 50px;
+        gap: 10px;
+        margin: 5px;
+        align-items: center;
+        justify-content: center;
+        transition: all .1s ease-in-out;
+        border-radius: 15%;
+        background-color: $main-yellow;
+        color: $main-darkblue;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
 
     ul {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         padding: 0;
         margin: 0;
         gap: 50px;
@@ -151,10 +189,11 @@ $main-yellow: #ffd60a;
         justify-content: center;
         align-items: center;
         gap: 20px;
+        width: 30vmin;
 
         .img-container {
-            width: 300px;
-            height: 300px;
+            width: 30vmin;
+            height: 30vmin;
     
             img {
                 width: 100%;
@@ -215,8 +254,8 @@ $main-yellow: #ffd60a;
         margin-top: 2vh;
         color: $main-yellow;
         .img-container {
-            width: 200px;
-            height: 200px;
+            width: 40vmin;
+            height: 40vmin;
     
             img {
                 width: 100%;

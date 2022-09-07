@@ -1,15 +1,24 @@
 #root {
   height: 100%;
   background-color: #000814;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #000814;
 }
 
 #create {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10em;
+  padding: 10vh 0 0 0;
   background-color: #000814;
   color: #ffd60a;
+  overflow: auto;
 }
 #create h1 {
   margin: 2px;
@@ -26,18 +35,20 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 15px;
   margin: 30px;
 }
 #create #avatar #image-select i {
+  font-size: 7vmin;
   transition: all 0.2s ease-in-out;
 }
 #create #avatar #image-select i:hover {
   transform: scale(1.08);
 }
 #create #avatar #image-select #avatar-image {
-  width: 300px;
-  height: 300px;
+  width: 40vmin;
+  height: 40vmin;
 }
 #create #avatar #image-select #avatar-image img {
   width: 100%;
@@ -88,10 +99,34 @@
   justify-content: center;
   align-items: center;
   color: #ffd60a;
+  padding: 10vmin;
+}
+#lobby h1 {
+  text-align: center;
+}
+#lobby #copy-invite {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 50px;
+  gap: 10px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease-in-out;
+  border-radius: 15%;
+  background-color: #ffd60a;
+  color: #001d3d;
+}
+#lobby #copy-invite:hover {
+  transform: scale(1.02);
 }
 #lobby ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   gap: 50px;
@@ -125,10 +160,11 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 30vmin;
 }
 #lobby #player .img-container {
-  width: 300px;
-  height: 300px;
+  width: 30vmin;
+  height: 30vmin;
 }
 #lobby #player .img-container img {
   width: 100%;
@@ -181,8 +217,8 @@
   color: #ffd60a;
 }
 #game #players .img-container {
-  width: 200px;
-  height: 200px;
+  width: 40vmin;
+  height: 40vmin;
 }
 #game #players .img-container img {
   width: 100%;
