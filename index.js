@@ -10,7 +10,7 @@ const httpServer = http.createServer(app);
 const PORT = process.env.PORT || 80;
 
 const corsOptions = {
-    origin: ["*", "http://localhost:3000", "https://admin.socket.io", "https://joshiiwoshi-tic-tac-toe.herokuapp.com"],
+    origin: ["*", "http://localhost:3000", "https://joshiiwoshi-tic-tac-toe.herokuapp.com"],
     methods: ["GET", "POST"]
 }
 
