@@ -11,8 +11,7 @@ const PORT = process.env.PORT || 80;
 
 const corsOptions = {
     origin: ["*", "http://localhost:3000", "https://admin.socket.io", "https://joshiiwoshi-tic-tac-toe.herokuapp.com"],
-    methods: ["GET", "POST"],
-    credentials: true
+    methods: ["GET", "POST"]
 }
 
 const io = new Server(httpServer, {
